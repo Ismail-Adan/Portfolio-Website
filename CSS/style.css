@@ -1,5 +1,40 @@
-p {
-    text-align: center;
+/* Generic styling */
+p { text-align: center; }
+
+#background {
+    background-color: #d9caff; /* Light purple background */
+    padding: 20px;
+    min-height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+/* Main content styling */
+#main-content {
+    background-color: #b3e5fc; /* Light blue main section */
+    padding: 40px;
+    border-radius: 16px; /* Smooth rounded corners */
+    max-width: 1200px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
 }
 
+/*
+* Styling for index.html
+*/
+
+/* Styling to make the pfp circular */
 #profilepic { position: relative; width: 200px; height: 200px; overflow: hidden; border-radius: 50%; display: block; margin: 0 auto;} #profilepic img { width: 100%; height: auto; }
+
+/* Styling to make page icons have equal spacing */
+#pageIcons { display: flex; justify-content: center; gap: 50px; }
+
+/* Styling to make page icons but for smaller screens */
+@media (max-width: 600px) {
+    #pageIcons {
+      flex-direction: column;
+      align-items: center; /* Center the items vertically */
+      gap: 15px;
+    }
+  }
