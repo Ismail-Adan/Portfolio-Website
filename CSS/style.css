@@ -1,11 +1,23 @@
 /* Generic styling */
 p { font-family: Arial, Helvetica, sans-serif; font-size: 22px; text-align: center; }
 
+/* Styling for links */
+a:link {
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: blue;
+}
+
 html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: black;
+  overflow: hidden;
 }
 
 body {
@@ -32,6 +44,7 @@ main {
     background-color: #b3e5fc; /* Light blue main section */
     padding: 40px;
     border-radius: 16px; /* Smooth rounded corners */
+    margin-bottom: 65px;
     max-width: 1200px;
     width: 90%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
@@ -39,11 +52,16 @@ main {
 
 /* Footer styling */
 footer {
-  color: white;
+  width: 100%;
   background-color: black;
+  color: white;
   text-align: center;
-  padding: 0.01px; /* Controlled padding for spacing */
-  margin: 0; /* No extra space */
+  padding: 0.01px;
+  /* 
+  Uncomment if you want the footer back, its causing problem with laptop screen sizes where the 
+  experiece.html pasge's content is interfering with the footer
+  position: fixed;
+  bottom: 0; */
 }
 
 /*
@@ -54,7 +72,27 @@ footer {
 #profilepic { position: relative; width: 200px; height: 200px; overflow: hidden; border-radius: 50%; display: block; margin: 0 auto;} #profilepic img { width: 100%; height: auto; }
 
 /* Styling to make page icons have equal spacing */
-#pageIcons { display: flex; justify-content: center; gap: 60px; }
+#pageIcons { 
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 30px;
+
+ }
+
+ .nav-button {
+  background-color: #5c67f2; /* Same blue as timeline */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #444bff;
+}
 
 /* Styling to make page icons but for smaller screens */
 @media (max-width: 600px) {
@@ -73,6 +111,7 @@ footer {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .project-card {
@@ -137,5 +176,93 @@ footer {
   }
   .project-card {
       width: 100%; /* Ensure full width on smaller screens */
+  }
+}
+
+/*
+* Styling for experience.html
+*/
+.experience-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+/* Timeline Container */
+.timeline {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 30px;
+}
+
+/* Vertical Line (Matches Theme) */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #5c67f2; 
+}
+
+/* Timeline Item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+/* Timeline Dot */
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #5c67f2;
+  border-radius: 50%;
+}
+
+/* Timeline Content */
+.timeline-content h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #5c67f2;
+}
+
+.timeline-content h2 {
+  margin: 5px 0;
+  font-size: 22px;
+}
+
+.timeline-content h4 {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.timeline-content ul {
+  padding-left: 20px;
+}
+
+.timeline-content ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline::before {
+    left: 6px;
+  }
+
+  .timeline-dot {
+    left: -5px;
   }
 }
