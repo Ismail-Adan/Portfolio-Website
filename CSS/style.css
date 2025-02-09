@@ -81,7 +81,7 @@ footer {
  }
 
  .nav-button {
-  background-color: #94C5CC; /* Same blue as timeline */
+  background-color: #94C5CC; /* Same colour as timeline */
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
@@ -164,6 +164,23 @@ footer {
 
 .project-card a:hover {
   text-decoration: underline;
+}
+
+.project-languages {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-languages span {
+  background-color: rgb(2, 155, 142); /* Soft purple to match theme */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
