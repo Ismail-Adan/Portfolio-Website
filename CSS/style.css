@@ -3,13 +3,13 @@ p { font-family: Arial, Helvetica, sans-serif; font-size: 22px; text-align: cent
 
 /* Styling for links */
 a:link {
-  color: blue;
+  color: black;
 }
 a:visited {
-  color: purple;
+  color: black;
 }
 a:hover {
-  color: blue;
+  color: black;
 }
 
 html, body {
@@ -31,7 +31,7 @@ main {
 }
 
 #background {
-    background-color: #d9caff; /* Light purple background */
+    background-color: #94C5CC; /* Light purple background */
     padding: 20px;
     min-height: 100vh; /* Full screen height */
     display: flex;
@@ -41,7 +41,7 @@ main {
   
 /* Main content styling */
 #main-content {
-    background-color: #b3e5fc; /* Light blue main section */
+    background-color: #B4D2E7; /* Light blue main section */
     padding: 40px;
     border-radius: 16px; /* Smooth rounded corners */
     margin-bottom: 65px;
@@ -81,7 +81,7 @@ footer {
  }
 
  .nav-button {
-  background-color: #5c67f2; /* Same blue as timeline */
+  background-color: #94C5CC; /* Same blue as timeline */
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
@@ -91,7 +91,7 @@ footer {
 }
 
 .nav-button:hover {
-  background-color: #444bff;
+  background-color: #67b9c5;
 }
 
 /* Styling to make page icons but for smaller screens */
@@ -205,7 +205,7 @@ footer {
   top: 0;
   bottom: 0;
   width: 4px;
-  background-color: #5c67f2; 
+  background-color: #62949c; 
 }
 
 /* Timeline Item */
@@ -222,7 +222,7 @@ footer {
   top: 5px;
   width: 12px;
   height: 12px;
-  background-color: #5c67f2;
+  background-color: #62949c;
   border-radius: 50%;
 }
 
@@ -230,7 +230,7 @@ footer {
 .timeline-content h3 {
   margin: 0;
   font-size: 18px;
-  color: #5c67f2;
+  color: #62949c;
 }
 
 .timeline-content h2 {
@@ -271,7 +271,7 @@ footer {
 * Styling for contactme.html
 */
 .contact-form {
-  background-color: #b3e5fc; /* Light blue */
+  /* background-color: #b3e5fc;  */
   padding: 30px;
   border-radius: 12px;
   max-width: 500px;
@@ -294,7 +294,7 @@ footer {
 .contact-form input, .contact-form textarea, .submit-btn {
   width: 100%;  /* Ensures all elements are the same width */
   padding: 10px;
-  border: 2px solid #5c67f2; /* Light purple */
+  border: 2px solid black; 
   border-radius: 6px;
   font-size: 16px;
   transition: border-color 0.3s;
@@ -310,8 +310,8 @@ footer {
 
 /* Submit button */
 .submit-btn {
-  background-color: #5c67f2; /* Purple */
-  color: white;
+  background-color: #94C5CC;
+  color: black;
   cursor: pointer;
   font-weight: bold;
   text-align: center;
@@ -321,5 +321,13 @@ footer {
 
 /* Hover effect */
 .submit-btn:hover {
-  background-color: #512da8; /* Darker purple */
+  background-color: #67b9c5; 
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 15px;
+    width: 80%; /* Make form smaller on mobile */
+  }
 }
