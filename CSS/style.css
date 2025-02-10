@@ -174,7 +174,7 @@ footer {
 }
 
 .project-languages span {
-  background-color: rgb(2, 155, 142); /* Soft purple to match theme */
+  background-color: rgb(2, 155, 142); /* Dark green to match theme */
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
@@ -321,7 +321,7 @@ footer {
 /* Focus effect */
 .contact-form input:focus, 
 .contact-form textarea:focus {
-  border-color: #5c67f2; /* Darker purple */
+  border-color: #4fabbb; /* Darker purple */
   outline: none;
 }
 
