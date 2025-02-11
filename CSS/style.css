@@ -37,7 +37,8 @@ main {
 #background {
     background-color: #94C5CC; 
     padding: 20px;
-    min-height: 100vh; /* Full screen height */
+    flex: 1;
+    /* min-height: 100vh; Full screen height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,6 +60,7 @@ main {
 /* Footer styling */
 footer {
   width: 100%;
+  margin-top: auto;
   background-color: #002147;
   color: white;
   text-align: center;
