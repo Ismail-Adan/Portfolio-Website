@@ -17,31 +17,37 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   color: black;
-  overflow: hidden;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling */
+  height: 100%;
 }
 
 body {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  min-height: 100vh; /* Ensure body height covers the viewport */
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
   flex: 1; /* Ensures main content takes up all available space */
+  display: flex;
+  flex-direction: column;
 }
 
 #background {
-    background-color: #94C5CC; /* Light purple background */
+    background-color: #94C5CC; 
     padding: 20px;
     min-height: 100vh; /* Full screen height */
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    overflow-y: auto; /* Ensures scrolling */
   }
   
 /* Main content styling */
 #main-content {
-    background-color: #B4D2E7; /* Light blue main section */
+    background-color: #B4D2E7; 
     padding: 40px;
     border-radius: 16px; /* Smooth rounded corners */
     margin-bottom: 65px;
@@ -53,15 +59,12 @@ main {
 /* Footer styling */
 footer {
   width: 100%;
-  background-color: black;
+  background-color: #002147;
   color: white;
   text-align: center;
   padding: 0.01px;
-  /* 
-  Uncomment if you want the footer back, its causing problem with laptop screen sizes where the 
-  experiece.html pasge's content is interfering with the footer
   position: fixed;
-  bottom: 0; */
+  bottom: 0;
 }
 
 /*
