@@ -338,6 +338,7 @@ footer {
   text-align: center;
   border: none;
   transition: background 0.3s;
+  margin-bottom: 25px;
 }
 
 /* Hover effect */
