@@ -110,6 +110,18 @@ footer {
 /*
 * Styling for projects.html
 */
+
+.projects-section {
+  margin-bottom: 50px;
+}
+
+.projects-section h2 {
+  font-size: 1.6em;
+  text-align: center;
+  margin-bottom: 35px;
+  color: #002147; /* matches footer/nav theme */
+}
+
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -168,6 +180,20 @@ footer {
 
 .project-card a:hover {
   text-decoration: underline;
+}
+
+/* Project Type Tag */
+.project-type {
+  margin: 8px 0;
+}
+
+.project-type span {
+  display: inline-block;
+  background-color: #002147; /* Dark blue like footer/nav */
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85em;
 }
 
 .project-languages {
